@@ -164,7 +164,7 @@ gem "jquery-ui-rails",  "2.0.2"
 gem "raphael-rails", "~> 2.1.2"
 gem 'bootstrap-sass', '~> 3.0'
 gem "font-awesome-rails", '~> 3.2'
-gem "gitlab_emoji", "~> 0.0.1.1"
+gem "gemoji", "~> 1.3.0"
 gem "gon", '~> 5.0.0'
 gem 'nprogress-rails'
 
