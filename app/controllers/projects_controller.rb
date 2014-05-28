@@ -133,7 +133,7 @@ class ProjectsController < ApplicationController
     team_members = sorted(@project.team.members)
     participants = team_members + participating
     @suggestions = {
-      emojis: Emoji.names.map { |e| { name: e, path: view_context.image_url("emoji/#{e}.png") } },
+      emojis: Emoji.names,
       issues: @project.issues.select([:iid, :title, :description]),
       mergerequests: @project.merge_requests.select([:iid, :title, :description]),
       members: participants.uniq

@@ -1,3 +1,4 @@
 :javascript
   GitLab.GfmAutoComplete.dataSource = "#{autocomplete_sources_project_path(@project, type: @noteable.class, type_id: params[:id])}"
+  GitLab.GfmAutoComplete.Emoji.assetBase = "#{Gitlab.config.gitlab.relative_url_root + '/assets/emoji'}"
   GitLab.GfmAutoComplete.setup();
